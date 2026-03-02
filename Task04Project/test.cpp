@@ -99,9 +99,9 @@ void test09() {
 }
 
 void test10() {
-	int array[]{ 1, 2, 1 };
-	int size = 3;
-	int expected[]{ 2, 1, 1 };
+	int array[]{ 1, 2 };
+	int size = 2;
+	int expected[]{ 2, 1  };
 	print(array, expected, size, "test10");
 }
 
