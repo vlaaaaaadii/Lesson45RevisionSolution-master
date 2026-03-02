@@ -7,22 +7,20 @@
 // элементов вектора есть хотя бы одна пара совпадающих.
 
 bool is_the_same_elements(int array[DEFAULT_SIZE], int size) {
-    if (size <= 0 || size < 2) {
-        return false;
-    }
-        
+	if (size < 2) {
+		return false;
+	}
 
+	for (int i = 0; i < size - 1; ++i) {
+		for (int j = i + 1; j < size; ++j) {
+			if (array[i] == array[j]) {
+				return true;
+			}
+		}
+	}
 
-for (int i = 0; i < size - 1; ++i) {
-    for (int j = i + 1; j < size; ++j) {
-        if (array[i] == array[j]) {
-            return true; 
-        }
-    }
-}
-    
-        return false;
-    
+	return false;
+
 }
 
 

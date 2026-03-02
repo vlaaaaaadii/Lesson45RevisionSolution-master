@@ -12,6 +12,8 @@ void reverse(int array[DEFAULT_SIZE], int size, int a, int b){
         return; 
     }
 
+
+
     while (a < b) {
         int temp = array[a];
         array[a] = array[b];
